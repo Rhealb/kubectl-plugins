@@ -61,7 +61,7 @@ func newRootCmd(in io.Reader, out, err io.Writer) *cobra.Command {
       hostpathpv controls the Kubernetes cluster hostpathpv manager.
 
       Find more information at:
-            https://gitlab.cloud.enndata.cn/kubernetes/k8s-plugins/kubectl-plugins/hostpathpv/`,
+            https://github.com/github.com/Rhealb/kubectl-plugins/hostpathpv/`,
 		Run: runHelp,
 	}
 	client, _ := getClientset()

@@ -22,15 +22,15 @@ import (
 	"path"
 	"strings"
 
-	"k8s-plugins/csi-plugin/hostpathpv/pkg/hostpath/xfsquotamanager"
-	xfs "k8s-plugins/csi-plugin/hostpathpv/pkg/hostpath/xfsquotamanager/common"
+	"github.com/Rhealb/csi-plugin/hostpathpv/pkg/hostpath/xfsquotamanager"
+	xfs "github.com/Rhealb/csi-plugin/hostpathpv/pkg/hostpath/xfsquotamanager/common"
 
 	"github.com/spf13/cobra"
 	"k8s.io/api/core/v1"
 	"k8s.io/client-go/kubernetes"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/kubernetes/pkg/kubectl/cmd/templates"
+	"k8s.io/kubernetes/pkg/kubectl/util/templates"
 )
 
 var (

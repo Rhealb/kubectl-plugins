@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"os"
 
-	cmd "k8s-plugins/kubectl-plugins/hostpathpv/pkg/cmd"
+	cmd "github.com/Rhealb/kubectl-plugins/hostpathpv/pkg/cmd"
 )
 
 // Execute adds all child commands to the root command sets flags appropriately.

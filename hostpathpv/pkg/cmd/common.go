@@ -6,11 +6,13 @@ import (
 	"encoding/hex"
 	"fmt"
 	"io"
-	xfs "k8s-plugins/csi-plugin/hostpathpv/pkg/hostpath/xfsquotamanager/common"
-	"k8s-plugins/extender-scheduler/pkg/algorithm"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/Rhealb/extender-scheduler/pkg/algorithm"
+
+	xfs "github.com/Rhealb/csi-plugin/hostpathpv/pkg/hostpath/xfsquotamanager/common"
 
 	"github.com/chai2010/gettext-go/gettext"
 	"github.com/golang/glog"

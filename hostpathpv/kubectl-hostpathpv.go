@@ -14,7 +14,7 @@
 
 package main
 
-import "k8s-plugins/kubectl-plugins/hostpathpv/cmd"
+import "github.com/Rhealb/kubectl-plugins/hostpathpv/cmd"
 
 func main() {
 	cmd.Execute()

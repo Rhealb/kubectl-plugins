@@ -18,18 +18,19 @@ package cmd
 import (
 	"fmt"
 	"io"
-	xfshostpath "k8s-plugins/csi-plugin/hostpathpv/pkg/hostpath"
-	"k8s-plugins/csi-plugin/hostpathpv/pkg/hostpath/xfsquotamanager/common"
-	"k8s-plugins/extender-scheduler/pkg/algorithm"
 	"strconv"
 	"strings"
 	"time"
+
+	xfshostpath "github.com/Rhealb/csi-plugin/hostpathpv/pkg/hostpath"
+	"github.com/Rhealb/csi-plugin/hostpathpv/pkg/hostpath/xfsquotamanager/common"
+	"github.com/Rhealb/extender-scheduler/pkg/algorithm"
 
 	"github.com/spf13/cobra"
 	"k8s.io/client-go/kubernetes"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/kubernetes/pkg/kubectl/cmd/templates"
+	"k8s.io/kubernetes/pkg/kubectl/util/templates"
 )
 
 var (

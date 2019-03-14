@@ -7,7 +7,7 @@ ENVVAR=
 GOOS?=linux
 ROOTPATH=`pwd` 
 BUILDGOPATH=/tmp/k8splugin-build
-BUILDPATH=$(BUILDGOPATH)/src/k8s-plugins/kubectl-plugins/hostpathpv
+BUILDPATH=$(BUILDGOPATH)/src/github.com/Rhealb/kubectl-plugins/hostpathpv
 
  
 .IGNORE : buildEnvClean
@@ -16,10 +16,10 @@ deps:
 	@go get github.com/tools/godep
 	
 buildEnvClean:
-	@rm $(BUILDPATH) 1>/dev/null 2>/dev/null || true
+	@rm -rf $(BUILDGOPATH) 1>/dev/null 2>/dev/null || true
 
 buildEnv: buildEnvClean
-	@mkdir -p $(BUILDGOPATH)/src/k8s-plugins/kubectl-plugins 1>/dev/null 2>/dev/null
+	@mkdir -p $(BUILDGOPATH)/src/github.com/Rhealb/kubectl-plugins 1>/dev/null 2>/dev/null
 	@ln -s $(ROOTPATH) $(BUILDPATH)
 	
 build: buildEnv clean deps 

@@ -27,15 +27,15 @@ import (
 	"syscall"
 	"time"
 
-	xfshostpath "k8s-plugins/csi-plugin/hostpathpv/pkg/hostpath"
-	xfs "k8s-plugins/csi-plugin/hostpathpv/pkg/hostpath/xfsquotamanager/common"
+	xfshostpath "github.com/Rhealb/csi-plugin/hostpathpv/pkg/hostpath"
+	xfs "github.com/Rhealb/csi-plugin/hostpathpv/pkg/hostpath/xfsquotamanager/common"
 
 	"github.com/spf13/cobra"
 	"k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
-	"k8s.io/kubernetes/pkg/kubectl/cmd/templates"
+	"k8s.io/kubernetes/pkg/kubectl/util/templates"
 )
 
 var (
